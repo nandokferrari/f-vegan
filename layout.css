@@ -78,8 +78,6 @@ h2 {
 p {
   line-height: 1.4;
 }
-.container {
-}
 
 .row {
   display: flex;
@@ -93,4 +91,49 @@ ol {
   padding-left: 15px;
   margin-bottom: 30px;
   line-height: 1.4;
+}
+
+#burger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+    padding: 30px;
+  }
+  header h1 {
+    font-size: 30px !important;
+  }
+  #burger {
+    display: inline-block;
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    flex-direction: column;
+    background: white;
+    width: calc(100% - 40px);
+    border: 2px solid black;
+    padding: 15px;
+    gap: 15px;
+  }
+  nav.show {
+    display: flex;
+  }
+  nav a {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  nav a:last-child {
+    border: 0;
+    padding: 0;
+  }
 }
