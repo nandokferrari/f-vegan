@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veganism - Further resources</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./layout.css" />
+    <style>
+      .row > * {
+        width: 50%;
+      }
+
+      img {
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+      }
+
+      .wrapper {
+        display: flex;
+        gap: 30px;
+      }
+
+      .col {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: space-around;
+      }
+
+      .col .content {
+        margin-bottom: 50px;
+      }
+      .websites-list li a {
+        color: white;
+      }
+      .lists-wrapper {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+      }
+      .lists-wrapper ul li {
+        max-width: 200px;
+      }
+      @media (max-width: 768px) {
+        .lists-wrapper {
+          flex-direction: column;
+        }
+      }
+      button[type='button'] {
+        background: black;
+        border: 1px solid white;
+        padding: 10px 30px;
+        font-size: 18px;
+        color: white;
+        display: block;
+        margin: 0 auto;
+      }
+      button[type='button']:hover {
+        background: white;
+        color: black;
+        cursor: pointer;
+      }
+
+      form {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        align-items: center;
+        justify-content: center;
+      }
+      form.show {
+        display: flex;
+      }
+
+      form div {
+        color: white;
+        width: 100%;
+        max-width: 400px;
+      }
+      form input,
+      textarea {
+        font-size: 20px;
+        padding: 10px 10px;
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 400px;
+      }
+      form button[type='submit'] {
+        background: white;
+        color: black;
+        border: 1px solid white;
+        padding: 10px 30px;
+        font-size: 18px;
+        display: block;
+        margin: 0 auto;
+      }
+      button[type='submit']:hover {
+        background: black;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="page-title">Further resources</h1>
+        <nav>
+          <a href="/">Home</a>
+          <a href="/types.html">Types</a>
+          <a href="/save-the-planet.html">Save the planet</a>
+          <a href="/tasty-recipes.html">Tasty recipes</a>
+          <a href="/further-resources.html">Further Resources</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="wrapper">
+          <div class="col">
+            <img src="./imgs/further-resources/resources.jpeg" alt="" />
+            <img src="./imgs/further-resources/questions.jpeg" alt="" />
+          </div>
+          <div class="col">
+            <div class="content">
+              <h2>Websites</h2>
+              <ul class="websites-list">
+                <li>
+                  <a href="https://www.peta.org/">https://www.peta.org/</a>
+                </li>
+                <li>
+                  <a href="https://www.veganhealth.org/"
+                    >https://www.veganhealth.org/</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.theveganrd.org/"
+                    >https://www.theveganrd.org/</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.treehugger.org/"
+                    >https://www.treehugger.org/</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="content">
+              <h2>Books & Magazines</h2>
+              <div class="lists-wrapper">
+                <div class="list">
+                  <b>Books</b>
+                  <ul>
+                    <li>The Plant-Based Journey</li>
+                    <li>Becoming Vegan</li>
+                    <li>Main Street Vegan</li>
+                    <li>Why We Love Dogs, Eat Pigs, and Wear Cows</li>
+                    <li>Change of Heart</li>
+                    <li>How to Create a Vegan World</li>
+                    <li>Eat Like You Give a F**k</li>
+                    <li>Fast Easy Cheap Vegan</li>
+                    <li>Vegan Comfort Classics</li>
+                  </ul>
+                </div>
+                <div class="list">
+                  <b>Magazines</b>
+                  <ul>
+                    <li>VegNews</li>
+                    <li>VEgan Life Magazine</li>
+                    <li>Plant Based</li>
+                    <li>Vegan Good Life</li>
+                    <li>VEGWorld</li>
+                    <li>Vegan Food & Living</li>
+                    <li>T.O.F.U.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <h2>Social media & Podcast</h2>
+              <div class="lists-wrapper">
+                <div class="list">
+                  <b>Books</b>
+
+                  <ul>
+                    <li>From My Bowl</li>
+                    <li>Plant Based Jane</li>
+                    <li>I am Tabitha Brown</li>
+                    <li>Plant You</li>
+                    <li>Cheap Lazy Vegan</li>
+                    <li>Farm Sanctuary</li>
+                    <li>James Aspey</li>
+                    <li>Earthling ED</li>
+                    <li>Max La Manna</li>
+                    <li>OMD 4 The Planet</li>
+                  </ul>
+                </div>
+                <div class="list">
+                  <b>Magazines</b>
+                  <ul>
+                    <li>Plant Based News</li>
+                    <li>The Simply Vegan</li>
+                    <li>Ordinary Vegan</li>
+                    <li>Food for Thought</li>
+                    <li>Pivot!</li>
+                    <li>The VeganAri Show</li>
+                    <li>Plant Proof</li>
+                    <li>Go Vegan Radio</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="open-form" type="button">
+          Still need more information, contact us!
+        </button>
+      </div>
+    </main>
+    <div class="container">
+      <footer>In a world where you can be anything, be kind.</footer>
+    </div>
+    <form id="contact-form">
+      <div class="wrapper-fields">
+        <div>Name</div>
+        <input />
+        <div>Email</div>
+        <input />
+        <div>Subject</div>
+        <input />
+        <div>Message</div>
+        <textarea></textarea>
+        <button id="close-form" type="submit">Send</button>
+      </div>
+    </form>
+    <script>
+      const openForm = document.getElementById('open-form');
+      const closeForm = document.getElementById('close-form');
+      const contactForm = document.getElementById('contact-form');
+
+      openForm.addEventListener('click', () => {
+        contactForm.classList.add('show');
+      });
+    </script>
+  </body>
+</html>
