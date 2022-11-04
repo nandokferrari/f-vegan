@@ -44,16 +44,13 @@
       .lists-wrapper {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         margin-top: 30px;
       }
       .lists-wrapper ul li {
         max-width: 200px;
       }
-      @media (max-width: 768px) {
-        .lists-wrapper {
-          flex-direction: column;
-        }
-      }
+
       button[type='button'] {
         background: black;
         border: 1px solid white;
@@ -120,11 +117,11 @@
         <img src="./imgs/icon.png" id="burger" />
 
         <nav id="menu">
-          <a href="/">Home</a>
-          <a href="/types.html">Types</a>
-          <a href="/save-the-planet.html">Save the planet</a>
-          <a href="/tasty-recipes.html">Tasty recipes</a>
-          <a href="/further-resources.html">Further Resources</a>
+          <a href="./">Home</a>
+          <a href="./types.html">Types</a>
+          <a href="./save-the-planet.html">Save the planet</a>
+          <a href="./tasty-recipes.html">Tasty recipes</a>
+          <a href="./further-resources.html">Further Resources</a>
         </nav>
       </div>
     </header>
